@@ -15,3 +15,34 @@ body {
     color: #efefef;
     font-family: 'Roboto', 'monospace', 'sans-serif';
 }
+
+#page-title {
+    font-family: 'Chakra Petch', 'monospace', 'sans-serif';
+    width: 100%;
+    font-weight: 500;
+    font-size: 34px;
+    padding: 10px 20px;
+}
+
+#page-title span::before {
+    content: '< ';
+}
+
+#page-title span::after {
+    content: ' /> ';
+}
+
+.container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px){
+    #page-title {
+        text-align: center;
+        font-size: 28px;
+    }
+}
