@@ -1,0 +1,67 @@
+header {
+    width: 100%;
+    height: 90px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px dashed darkgray;
+}
+
+header .header-logo {
+    font-family: 'Chakra Petch', 'sans-serif';
+    text-wrap: nowrap;
+}
+
+header .header-logo p:first-child {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+header .header-logo p:last-child {
+    margin-left: 50px;
+}
+
+header .header-options {
+    display: flex;
+}
+
+header .header-options a {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 7px 14px;
+    border-bottom: 2px solid transparent;
+    /* transition: 250ms; */
+}
+
+header .header-options a.selected {
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #efefef;
+    color: #121214;
+}
+
+header .header-options a:hover {
+    /* background-color: #efefef;
+    color: #121214; */
+    border-bottom: 2px solid #efefef;
+}
+
+header .header-options a + a {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    header .header-options {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
