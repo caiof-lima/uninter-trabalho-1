@@ -1,5 +1,7 @@
+/* Importa as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
+/* Reset de CSS para garantir um comportamento igual entre os browsers */
 *,
 *:after,
 *:before {
@@ -32,14 +34,15 @@ body {
     padding: 10px 20px;
 }
 
+/* Aplica o efeito de tag HTML dentro dos titulos da pagina */
 #page-title span::before {
     content: '< ';
 }
-
 #page-title span::after {
     content: ' /> ';
 }
 
+/* Onde ficara todo conteudo de cada pagina */
 .container {
     margin-top: 20px;
     width: 100%;
