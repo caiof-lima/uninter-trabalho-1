@@ -10,7 +10,15 @@
     color: inherit;
 }
 
+html,
 body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #121214;
     color: #efefef;
     font-family: 'Roboto', 'monospace', 'sans-serif';
@@ -36,11 +44,13 @@ body {
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex: 1 0 auto;
+    align-items: center;
     padding: 10px 20px;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     #page-title {
         text-align: center;
         font-size: 28px;

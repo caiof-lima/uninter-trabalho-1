@@ -1,0 +1,41 @@
+#education {
+    width: 100%;
+}
+
+#education .education-section {
+    padding-left: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#education .education-section h3 {
+    font-family: 'Chakra Petch', 'monospace', 'sans-serif';
+    font-size: 28px;
+}
+
+#education .education-section h3::before {
+    content: '✔️ ';
+}
+
+#education .education-section ul {
+    margin: 10px 50px;
+}
+
+#education .education-section ul li {
+  padding: 0.25em 0;
+  list-style-type: square;
+}
+
+@media screen and (max-width: 600px){
+    #education .education-section {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    #education .education-section h3 {
+        align-self: flex-start;
+        text-wrap: wrap;
+        font-size: 24px;
+    }
+}

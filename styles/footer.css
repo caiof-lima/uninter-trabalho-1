@@ -1,0 +1,14 @@
+footer {
+    width: 100% !important;
+    text-align: center;
+    border-top: 1px solid darkgrey;
+}
+
+footer p {
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+footer p:last-child {
+    margin-bottom: 7px;
+}
