@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    min-height: 90px;
     height: 90px;
     padding: 10px 15px;
     display: flex;
@@ -21,6 +22,7 @@ header .header-logo p:first-child {
 
 header .header-logo p:last-child {
     margin-left: 50px;
+    color: #f3b700;
 }
 
 header .header-options {
@@ -49,15 +51,16 @@ header .header-options a.selected {
     color: #121214;
 }
 
-header .header-options a + a {
+header .header-options a+a {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     header {
         flex-direction: column;
         justify-content: center;
         height: auto;
+        min-height: auto;
     }
 
     header .header-options {
@@ -65,7 +68,7 @@ header .header-options a + a {
         flex-direction: column;
     }
 
-    header .header-options a + a {
+    header .header-options a+a {
         margin-left: 0;
         margin-top: 8px;
     }
